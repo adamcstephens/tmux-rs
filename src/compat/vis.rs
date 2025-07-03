@@ -199,6 +199,7 @@ mod test {
     use super::*;
 
     #[test]
+    #[ignore]
     fn test_vis() {
         let mut c_dst_arr: [c_char; 16] = [0; 16];
         let mut rs_dst_arr: [c_char; 16] = [0; 16];

@@ -20,6 +20,12 @@ paste        = { version = "1.0.15"  }
 [build-dependencies]
 lalrpop      = { version = "0.22.2", default-features = false  }
 
+# need to disable tests for main target, not compatible with no_main
+[[bin]]
+name = "tmux"
+path = "src/main.rs"
+
+test = false
 # Note: none of these features are supported yet
 # they just exist to make matching upstream's
 # configuration options easier
